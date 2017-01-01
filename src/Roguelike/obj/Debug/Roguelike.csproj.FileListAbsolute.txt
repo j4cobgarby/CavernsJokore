@@ -1,0 +1,12 @@
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\bin\Debug\Roguelike.exe.config
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\bin\Debug\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\bin\Debug\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\obj\Debug\Roguelike.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\obj\Debug\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\Roguelike\Roguelike\obj\Debug\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Debug\Roguelike.exe.config
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Debug\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Debug\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Debug\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Debug\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Debug\Roguelike.csprojResolveAssemblyReference.cache
