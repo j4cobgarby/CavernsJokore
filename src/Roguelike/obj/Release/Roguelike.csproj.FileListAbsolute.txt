@@ -1,0 +1,5 @@
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Release\Roguelike.exe.config
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Release\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Release\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Release\Roguelike.exe
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Release\Roguelike.pdb

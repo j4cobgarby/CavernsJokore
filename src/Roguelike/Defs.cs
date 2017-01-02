@@ -46,6 +46,4 @@ namespace Roguelike
 			Console.SetCursorPosition(0, 0);
 		}
 	}
-
-
 }

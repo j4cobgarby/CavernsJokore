@@ -10,7 +10,6 @@ namespace Roguelike
 
 		static void Main(string[] args)
 		{
-			bool exited = false;
 			bool inmenu = true;
 			Console.CursorVisible = false;
 
@@ -59,7 +58,6 @@ namespace Roguelike
 						Console.ReadKey(true);
 						break;
 					case "Exit":
-						if (choice == "Exit") exited = true;
 						return;
 					default: break;
 				}

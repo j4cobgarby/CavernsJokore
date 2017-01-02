@@ -15,6 +15,17 @@ namespace Roguelike
 		static ConsoleColor accent = ConsoleColor.Magenta;
 		static ConsoleColor accentFG = ConsoleColor.White;
 
+		public static int HowManyItemInInv(string disp)
+		{
+			int amount = 0;
+			foreach (Item it in Program.world.player.inv.items)
+			{
+				string current = it.dispName;
+				if (disp == current) amount++;
+			}
+			return amount;
+		}
+
 		public static string CapitalizeEachWord(string s)
 		{
 			s = Regex.Replace(s, @"(^\w)|(\s\w)", m => m.Value.ToUpper());
@@ -42,7 +53,7 @@ namespace Roguelike
 			Program.info.changeContent(String.Format("{0}: *{1}*", who, what));
 		}
 
-		static string textBlank = "_";
+		static string textBlank = "_"; // What's displayed in text input for somewhere not typed
 		
 		public static string TextInput(string prompt, int max)
 		{
@@ -90,7 +101,7 @@ namespace Roguelike
 			return longest;
 		}
 
-		private const int maxChoices = 9;
+		private const int maxChoices = 11; // Maximum choices in MultiChoice
 
 		public static string MultiChoice(string prompt, params string[] choices)
 		{
