@@ -14,14 +14,30 @@ namespace Roguelike
 		public Inventory()
 		{
 			items = new List<Item>();
-			// TODO: Remove these for deployment
-			//
-			//items.Add(new PracticeSword());
-			//items.Add(new PracticeSword());
-			//items.Add(new DragonDaggers());
+
+			// Starting items
+			items.Add(new Torch(100));
+			items.Add(new Dagger());
+			items.Add(new Dagger());
 		}
 
-		public void draw()
+		public void AddItem(Item item)
+		{
+			items.Add(item);
+			Program.info.changeContent(String.Format("{0} has been added to your inventory!", item.dispName));
+		}
+
+		public void AddItem(Item item, int amount)
+		{
+			for (int i = 0; i < amount; i++)
+			{
+				items.Add(item);
+			}
+			Program.info.changeContent(String.Format("{0}X {1} have been added to your inventory!", 
+				amount.ToString(), item.dispName));
+		}
+
+		public void Draw()
 		{
 			List<string> alreadyDrawn = new List<string>();
 			int textY = 0;

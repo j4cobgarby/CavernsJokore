@@ -32,6 +32,59 @@ namespace Roguelike
 			return s;
 		}
 
+		public static Item SelectFromInv()
+		{
+			int chosenIndex = 0;
+			while (true)
+			{
+				// The drawing
+
+				Console.BackgroundColor = ConsoleColor.White;
+				Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+				for (int i = 0; i < 6; i++) // 6 is the height
+				{
+					Console.SetCursorPosition(0, 1 + i);
+					Console.Write(new string(' ', Defs.width));
+				}
+				for (int i = 0; i < Program.world.player.inv.items.Count; i++)
+				{
+					if (i - 1 == chosenIndex)
+					{
+						Console.BackgroundColor = ConsoleColor.DarkMagenta;
+						Console.ForegroundColor = ConsoleColor.White;
+					}
+
+					Console.SetCursorPosition(0, i + 1);
+					Console.Write(Helpers.CapitalizeEachWord(Program.world.player.inv.items[i].dispName));
+
+					Console.ForegroundColor = ConsoleColor.DarkMagenta;
+					Console.BackgroundColor = ConsoleColor.White;
+				}
+
+				Console.ResetColor();
+
+				// End drawing
+
+				ConsoleKeyInfo key = Console.ReadKey(true);
+				switch (key.Key.ToString())
+				{
+					case "UpArrow":
+						chosenIndex--;
+						break;
+					case "DownArrow":
+						chosenIndex++;
+						break;
+					default:
+						break;
+				}
+				if (key.Key.ToString() == "Enter")
+				{
+					return Program.world.player.inv.items[chosenIndex];
+				} 
+			}
+		}
+
 		public static void PrintCenter(string s)
 		{
 			Console.SetCursorPosition((Defs.width - s.Length) / 2, Console.CursorTop);

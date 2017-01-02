@@ -13,11 +13,13 @@ namespace Roguelike
 		public bool isRanged { get; set; }
 		public bool isMagic { get; set; }
 		public bool isStackable { get; set; }
+		public bool isEdible { get; set; }
 
 		public int bluntDmg { get; set; } // 1-50
 		public int pierceDmg { get; set; } // 1-50
 		public int attackSpeed { get; set; } // Affects chance to miss etc.., 1-20 = slow-fast
 		public int stackSize { get; set; }
+		public int healthOnEat { get; set; } // If it's food, it will restore some health on eating
 
 		public string dispName { get; set; }
 
@@ -41,6 +43,9 @@ namespace Roguelike
 		// Let's do that first.
 	}
 
+	/*
+	 * The swords
+	 */
 	class Sword : Item
 	{
 		public Sword(int bluntDmg, int pierceDmg, int attackSpeed, string dispName)
@@ -58,7 +63,6 @@ namespace Roguelike
 			hitMessage = "{0} strikes {1} for {2} damage with " + dispName + "!";
 		}
 	}
-
 	class PracticeSword : Sword
 	{
 		public PracticeSword() : base(1, 0, 6, "a practice sword") { }
@@ -90,5 +94,21 @@ namespace Roguelike
 	class DragonDaggers : Sword
 	{
 		public DragonDaggers() : base(2, 24, 15, "dragon daggers") { }
+	}
+
+	/*
+	 * Misc
+	 */
+	class Torch : Item
+	{
+		public Torch(int turns)
+		{
+			isWieldable = true;
+			isWeapon = false;
+			isRanged = false;
+			isMagic = false;
+
+			dispName = "a torch";
+		}
 	}
 }

@@ -3,3 +3,4 @@ C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Re
 C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\bin\Release\Roguelike.pdb
 C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Release\Roguelike.exe
 C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Release\Roguelike.pdb
+C:\Users\Jacob\Documents\Programming Stuff\C#\CavernsJokore\src\Roguelike\obj\Release\Roguelike.csprojResolveAssemblyReference.cache

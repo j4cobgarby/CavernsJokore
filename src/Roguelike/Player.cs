@@ -17,6 +17,9 @@ namespace Roguelike
 		public string name;
 		public string gender; // "male" or "female"
 
+		public int health = Defs.defaultHealth;
+		public int power = Defs.defaultPower; // Magic can't be cast when this is low
+
 		public Inventory inv = new Inventory();
 
 		public Class cls;
@@ -27,6 +30,7 @@ namespace Roguelike
 		{
 			this.l = Defs.width / 2;
 			this.t = Defs.height / 2;
+
 			this.name = "Unnamed";
 			this.disp = '@';
 		}
@@ -54,7 +58,7 @@ namespace Roguelike
 
 		public void drawInventory()
 		{
-			inv.draw();
+			inv.Draw();
 		}
 
 		public void move(int l, int t) // This will also handle events based on chars moved to

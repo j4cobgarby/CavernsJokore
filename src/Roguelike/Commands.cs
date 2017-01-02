@@ -8,6 +8,9 @@ namespace Roguelike
 {
 	static class Commands
 	{
+		/* Commands used by the player
+		 * 
+		 */
 		public static void Help()
 		{
 			Console.Clear();
@@ -43,6 +46,14 @@ namespace Roguelike
 			Helpers.Do("You", "quacks");
 		}
 
+		public static void Eat()
+		{
+			Helpers.SelectFromInv();
+		}
+
+		/* Commands not directly used by the player
+		 * 
+		 */ 
 		public static void ShiftRoom(int x, int y, string arrowDir)
 		{
 			try

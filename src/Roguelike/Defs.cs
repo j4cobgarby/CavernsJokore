@@ -22,6 +22,9 @@ namespace Roguelike
 			". \u2591><\u2191\u2193\u2190\u2192"
 			.ToCharArray();
 
+		public static int defaultHealth = 100;
+		public static int defaultPower = 80;
+
 		public static void Splash()
 		{
 			Console.Write(new string('\n', 4));

@@ -82,6 +82,7 @@ namespace Roguelike
 					case "d":
 						break;
 					case "e":
+						Commands.Eat();
 						break;
 					case "f":
 						break;
