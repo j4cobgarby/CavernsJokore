@@ -15,9 +15,8 @@
  
 ## Usage
 ~~Right now, there isn't a downloadable `.exe`. However, you can easily build it yourself from Visual Studio! I would suggest this.~~
-It does **not** work on any operating system besides Windows.
-
-If you are in this sub-heading for any reason besides how to use the actual `.exe`, you probably want to know how to play! Well, **at the time of writing, it's not playable**. I mean, you *technically* can play it, but it's not particularly exciting.
+~~It does **not** work on any operating system besides Windows.~~
+If you are in this sub-heading for any reason besides how to use the actual `.exe`, you probably want to know how to play! Well, ~~**at the time of writing, it's not playable**.~~ I mean, you *technically* can play it, but it's not particularly exciting.*OR*: Download and run the exe in Releases.
 
 ## Contributing
 1. Fork it!
