@@ -19,7 +19,7 @@ namespace Roguelike
 			.ToCharArray();
 
 		public static char[] playerPassables =
-			". \u2591><\u2191\u2193\u2190\u2192"
+			". \u2591><\u2191\u2193\u2190\u2192T12345"
 			.ToCharArray();
 
 		public static int defaultHealth = 100;

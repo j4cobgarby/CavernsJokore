@@ -19,6 +19,7 @@ namespace Roguelike
 			items.Add(new Torch(100));
 			items.Add(new Dagger());
 			items.Add(new Dagger());
+			items.Add(new Bread());
 		}
 
 		public void AddItem(Item item)

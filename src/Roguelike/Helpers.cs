@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Serialization;
 
 namespace Roguelike
 {
-	class Helpers
+	abstract class Helpers
 	{
-		static ConsoleColor accent = ConsoleColor.Magenta;
-		static ConsoleColor accentFG = ConsoleColor.White;
+		private static readonly ConsoleColor accent = ConsoleColor.Magenta;
+		private static readonly ConsoleColor accentFG = ConsoleColor.White;
 
 		public static int HowManyItemInInv(string disp)
 		{
@@ -80,7 +76,7 @@ namespace Roguelike
 				}
 				if (key.Key.ToString() == "Enter")
 				{
-					return Program.world.player.inv.items[chosenIndex];
+					return Program.world.player.inv.items[chosenIndex + 1];
 				} 
 			}
 		}
@@ -153,8 +149,6 @@ namespace Roguelike
 			string longest = arr.OrderByDescending(s => s.Length).First();
 			return longest;
 		}
-
-		private const int maxChoices = 11; // Maximum choices in MultiChoice
 
 		public static string MultiChoice(string prompt, params string[] choices)
 		{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roguelike
 {
-	class Class
+	abstract class Class
 	{
 		public string id;
 

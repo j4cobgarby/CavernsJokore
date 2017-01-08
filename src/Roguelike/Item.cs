@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roguelike
 {
-	class Item
+	abstract class Item
 	{
 		public bool isWieldable { get; set; }
 		public bool isWeapon { get; set; }
@@ -46,14 +46,12 @@ namespace Roguelike
 	/*
 	 * The swords
 	 */
-	class Sword : Item
+	abstract class Sword : Item
 	{
 		public Sword(int bluntDmg, int pierceDmg, int attackSpeed, string dispName)
 		{
 			isWieldable = true;
 			isWeapon = true;
-			isRanged = false;
-			isMagic = false;
 
 			this.bluntDmg = bluntDmg;
 			this.pierceDmg = pierceDmg;
@@ -110,5 +108,24 @@ namespace Roguelike
 
 			dispName = "a torch";
 		}
+	}
+
+	/*
+	 * Food
+	 */
+	abstract class Food : Item
+	{
+		public Food(int healthOnEat, string dispName)
+		{
+			this.healthOnEat = healthOnEat;
+			this.dispName = dispName;
+
+			isEdible = true;
+		}
+	}
+
+	class Bread : Food
+	{
+		public Bread() : base(7, "a loaf of bread") { }
 	}
 }

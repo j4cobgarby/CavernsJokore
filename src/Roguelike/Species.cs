@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roguelike
 {
-	class Species
+	abstract class Species
 	{
 		public string displayName;
 	}

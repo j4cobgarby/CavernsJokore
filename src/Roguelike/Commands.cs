@@ -34,25 +34,40 @@ namespace Roguelike
 			}
 			Console.ReadKey();
 			Console.ResetColor();
-		}
+		} // ?
+
+		public static void Eat()
+		{
+			Item proposedFood = Helpers.SelectFromInv();
+			if (proposedFood.isEdible)
+			{
+				// Then the item IS food, so..
+				Program.world.player.health += proposedFood.healthOnEat;
+				Helpers.Do("You", String.Format(
+					"eats {0}, recouping {1} point(s) of health.", 
+					proposedFood.dispName, proposedFood.healthOnEat));
+			}
+			else
+			{
+				// But this is what happens if it isn't.
+				Program.info.changeContent("I wouldn't eat that..");
+				return;
+			}
+		} // e
 
 		public static void Inventory()
 		{
 			Program.world.player.drawInventory();
-		}
+		} // i
 
 		public static void Quack()
 		{
 			Helpers.Do("You", "quacks");
-		}
-
-		public static void Eat()
-		{
-			Helpers.SelectFromInv();
-		}
+		} // q
 
 		/* Commands not directly used by the player
-		 * 
+		 * but instead used when the player does a specific
+		 * thing.
 		 */ 
 		public static void ShiftRoom(int x, int y, string arrowDir)
 		{

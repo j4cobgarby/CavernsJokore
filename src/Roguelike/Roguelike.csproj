@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Being.cs" />
     <Compile Include="Class.cs" />
     <Compile Include="ClassStats.cs" />
     <Compile Include="Commands.cs" />
