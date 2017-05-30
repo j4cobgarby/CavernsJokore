@@ -1,5 +1,5 @@
 # Caverns of Jokore!
-### *These screenshots certainly are prone to change*
+## *MAKE SURE TO PUT THE CMD WINDOW TO DIMENSIONS 80x24*
 ![Splash Screen](https://github.com/j4cobgarby/CavernsJokore/blob/master/demo.png)
 ![Player Creation] (https://github.com/j4cobgarby/CavernsJokore/blob/master/playercreate.png)
 ![In the town] (https://github.com/j4cobgarby/CavernsJokore/blob/master/ingame1.png)
