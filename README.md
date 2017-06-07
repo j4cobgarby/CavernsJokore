@@ -2,11 +2,11 @@
 ## *MAKE SURE TO PUT THE CMD WINDOW TO DIMENSIONS 80x24*
 ![Splash Screen](demo.png)
 
-![Player Creation] (playercreate.png)
+![Player Creation](playercreate.png)
 
-![In the town] (ingame1.png)
+![In the town](ingame1.png)
 
-![Explore caves] (dungeon.png)
+![Explore caves](dungeon.png)
 
 ### A roguelike written in C# for Windows, without using Curses, or any additional C# libraries!
 
