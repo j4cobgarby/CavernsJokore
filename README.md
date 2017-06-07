@@ -1,9 +1,9 @@
 # Caverns of Jokore!
 ## *MAKE SURE TO PUT THE CMD WINDOW TO DIMENSIONS 80x24*
-![Splash Screen](https://github.com/j4cobgarby/CavernsJokore/blob/master/demo.png)
-![Player Creation] (https://github.com/j4cobgarby/CavernsJokore/blob/master/playercreate.png)
-![In the town] (https://github.com/j4cobgarby/CavernsJokore/blob/master/ingame1.png)
-![Explore caves] (https://github.com/j4cobgarby/CavernsJokore/blob/master/dungeon.png)
+![Splash Screen](demo.png)
+![Player Creation] (playercreate.png)
+![In the town] (ingame1.png)
+![Explore caves] (dungeon.png)
 
 ### A roguelike written in C# for Windows, without using Curses, or any additional C# libraries!
 
